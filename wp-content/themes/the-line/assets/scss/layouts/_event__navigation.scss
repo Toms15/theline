@@ -1,0 +1,90 @@
+.event__navigation {
+	position: relative;
+	.event__navigation--last {
+		width: 100%;
+		min-height: 150px;
+		background-color: $white;
+		padding: 1.5rem;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+		span {
+			color: $red;
+			font-weight: 400;
+			font-size: .9rem;
+			letter-spacing: 0.1em;
+			font-family: 'Roboto', Helvetica, sans-serif;	
+		}
+		h6 {
+			font-family: 'Roboto', Helvetica, sans-serif;
+			font-size: 1.2rem;
+			letter-spacing: 0.05em;
+			line-height: 1.8em;
+			margin: 0 0;
+		}
+		a {
+			color: $black;
+			text-decoration: none;
+		}
+	}
+	.event__navigation--future {
+		width: 100%;
+		min-height: 150px;
+		background-color: $red;
+		padding: 1.5rem;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+		span {
+			color: $black;
+			font-weight: 400;
+			font-size: .9rem;
+			letter-spacing: 0.1em;
+			font-family: 'Roboto', Helvetica, sans-serif;	
+		}
+		h6 {
+			font-family: 'Roboto', Helvetica, sans-serif;
+			font-size: 1.2rem;
+			letter-spacing: 0.05em;
+			line-height: 1.8em;
+			margin: 0 0;
+		}
+		a {
+			color: $white;
+			text-decoration: none;
+		}
+	}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.event__navigation {
+		position: absolute;
+		min-height: 135px;
+		height: 135px;
+		width: 45vw;
+		right: 0;
+		margin-top: -65px;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		.event__navigation--last {
+			width: 50%;
+			height: 100%;
+			min-height: 135px;
+		}
+		.event__navigation--future {
+			width: 50%;
+			height: 100%;
+			min-height: 135px;
+		}
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

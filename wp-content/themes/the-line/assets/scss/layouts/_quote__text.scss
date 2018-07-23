@@ -1,0 +1,24 @@
+.quote__text {
+	text-align: center;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	color: $white;
+	font-weight: 400;
+	font-size: 1.8rem;
+	letter-spacing: 0.05em;
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.quote__text {
+		font-weight: 700;
+		font-size: 3rem;
+		width: 40%;
+		margin: 0 auto;
+		padding: 10rem 0;
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

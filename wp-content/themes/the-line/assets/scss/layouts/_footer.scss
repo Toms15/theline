@@ -1,0 +1,141 @@
+footer {
+	background-color: $black;
+	padding: 2rem 1rem;
+	position: relative;
+	z-index: 5;
+	.widget__container {
+		.contact__box {
+			border-top: 1px solid $red;
+			padding-top: 1rem;
+			color: $white;
+			margin: 1rem 0 2rem;
+			figcaption {
+				display: none;
+			}
+		}
+		.column:first-of-type {
+			.contact__box {
+				border-top: 0;
+			}
+		}
+	}
+	.social__link {
+		position: relative;
+		width: 100%;
+		margin-bottom: 4rem;
+		.social__link--text {
+			text-align: center;
+			width: 100%;
+			color: $red;
+			font-family: 'Roboto', Helvetica, sans-serif;
+			font-weight: 700;
+			letter-spacing: 0.05em;
+			font-size: 1.2rem;
+		}
+		.social__link--icon {
+			padding: 1rem 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			a {
+				background-color: $red;
+				color: $white;
+				width: 40px;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 40px;
+				margin: 0 .5rem;
+			}
+		}
+	}
+}
+.copyright {
+	background-color: $black;
+	padding: 1rem 2rem;
+	text-align: center;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: .9rem;
+	color: $white;
+	a {
+		color: $white;
+		&:hover {
+			color: $red;
+		}
+	}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	footer {
+		padding: 5rem;
+		.widget__container {
+			.contact__box {
+				border-top: 0;
+				border-left: 1px solid $red;
+				padding-top: 0;
+				padding-left: 1rem;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+			}
+			.column:first-of-type {
+				.contact__box {
+					border-left: 0;
+				}
+			}
+		}
+		.social__link {
+			position: absolute;
+			left: 0;
+			top: -35px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			margin-bottom: 0;
+			.social__link--text {
+				background-color: $red;
+				text-align: right;
+				padding: 1rem 2rem;
+				width: 40vw;
+				color: $black;
+				font-family: 'Roboto', Helvetica, sans-serif;
+				font-weight: 700;
+				letter-spacing: 0.05em;
+				font-size: 1.2rem;
+			}
+			.social__link--icon {
+				padding: 1rem 2rem;
+				a {
+					background-color: $red;
+					color: $white;
+					width: 40px;
+					height: 40px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 40px;
+					transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+					&:hover {
+						background-color: $white;
+						color: $red;
+						transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+					}
+				}
+			}
+		}
+	}
+	.copyright {
+		padding: 1rem 5rem;
+		text-align: left;
+		font-size: .8rem;
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

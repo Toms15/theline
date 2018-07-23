@@ -1,0 +1,29 @@
+.option__content {
+	position: relative;
+	h2 {
+		font-family: 'Roboto', Helvetica, sans-serif;
+		color: $red;
+		font-size: 1.3rem;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		padding: 0 1rem;
+		margin-bottom: 1rem;
+	}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.option__content {
+		margin-bottom: 15rem;
+		h2 {
+			font-size: 2rem;
+			padding: 0 5rem;
+			margin-bottom: 1rem;
+		}
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

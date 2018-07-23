@@ -1,0 +1,23 @@
+.is--scrolled {
+	position: fixed;
+	background-color: $black;
+	height: 75px;
+	width: 100%;
+	transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+}
+.has--no-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.is--scrolled {
+		height: 100px;
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
