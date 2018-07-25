@@ -18,7 +18,7 @@ $images = get_field('gallery');
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<!-- Featured Image -->
-	<div class="hero__page" style="background: url('<?php echo $image['0'];?>') no-repeat center center;"></div>
+	<div class="hero__page" style="background: url('<?php echo $image['url'];?>') no-repeat center center;"></div>
 	
 	<div class="content__event">
 		<!-- Back to all events -->
