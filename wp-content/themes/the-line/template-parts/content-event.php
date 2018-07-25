@@ -103,7 +103,7 @@ $images = get_field('gallery');
 		<div class="grid-x">
 			<?php if( $images ): ?>
 				<?php foreach( $images as $image ): ?>
-					<div class="large-6 medium-6 small-12 column" data-aos="fade-up" data-aos-delay="300">
+					<div class="large-6 medium-6 small-12 column" data-aos="fade-up">
 						<a href="<?php echo $image['url']; ?>">
 							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 						</a>
