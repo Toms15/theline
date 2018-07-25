@@ -11,14 +11,14 @@ $client = get_field('cliente');
 $event = get_field('evento');
 $location = get_field('luogo');
 $people = get_field('partecipanti');
+$image = get_field('immagine_di_presentazione');
 $images = get_field('gallery');
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<!-- Featured Image -->
-	<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-	<div class="hero__page" style="background: url('<?php echo $thumb['0'];?>') no-repeat center center;"></div>
+	<div class="hero__page" style="background: url('<?php echo $image['0'];?>') no-repeat center center;"></div>
 	
 	<div class="content__event">
 		<!-- Back to all events -->
