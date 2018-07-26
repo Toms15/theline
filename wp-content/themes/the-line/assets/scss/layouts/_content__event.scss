@@ -74,20 +74,23 @@
 }
 .share__event {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	justify-content: flex-start;
 	flex-direction: column;
+	padding: 0 1.5rem;
 	h6 {
 		font-family: 'Roboto', Helvetica, sans-serif;
 		font-weight: 400;
 		font-size: .9rem;
 		letter-spacing: 0.05em;
 		color: $red;
+		margin-bottom: .5rem;
 	}
 	.social__icon {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin-bottom: 4rem;
 		a {
 			background-color: $red;
 			color: $white;
@@ -97,7 +100,7 @@
 			align-items: center;
 			justify-content: center;
 			border-radius: 40px;
-			margin: 0 .5rem;
+			margin: 0 1rem 0 0;
 		}
 	}
 }
