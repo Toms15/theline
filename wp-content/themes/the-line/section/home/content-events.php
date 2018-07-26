@@ -23,31 +23,30 @@ $events = get_sub_field('portfolio');
 				<div class="large-4 medium-4 small-12 column">
 					<div class="grid_item effect__hover">
 						<?php echo get_the_post_thumbnail( $p->ID ); ?>
-							<div class="grid_item-info">
-								<div class="grid_item-info--text">
-									<a href="<?php echo get_permalink( $p->ID ); ?>">
-										<h3><?php echo get_the_title( $p->ID ); ?></h3>
-									</a>
-									<div class="grid_item-info--category">
-										<hr>
-										<?php
-										$categories = get_the_category( $p->ID );
-										$separator = ' > ';
-										$output = '';
-										if($categories){
-											foreach($categories as $category) {
-												$output .= $category->cat_name.$separator;
+							<a href="<?php echo get_permalink( $p->ID ); ?>">
+								<div class="grid_item-info">
+									<div class="grid_item-info--text">
+											<h3><?php echo get_the_title( $p->ID ); ?></h3>
+										<div class="grid_item-info--category">
+											<hr>
+											<?php
+											$categories = get_the_category( $p->ID );
+											$separator = ' > ';
+											$output = '';
+											if($categories){
+												foreach($categories as $category) {
+													$output .= $category->cat_name.$separator;
+												}
+												echo trim($output, $separator);
 											}
-											echo trim($output, $separator);
-										}
-										?>
-
+											?>
+										</div>
+										<span class="read__more">
+											Scopri di più
+										</span>
 									</div>
-									<a class="read__more" href="<?php echo get_permalink( $p->ID ); ?>">
-										Scopri di più
-									</a>
 								</div>
-							</div>
+							</a>
 					</div>
 				</div>
 				<?php if ($count == 8) :

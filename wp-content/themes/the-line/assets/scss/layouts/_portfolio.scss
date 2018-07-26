@@ -89,6 +89,13 @@
 				transform: scale(1);
 				transition: all 500ms cubic-bezier(.645, .045, .355, .2);
 			}
+			a {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+			}
 			.grid_item-info {
 				position: absolute;
 				bottom: 0;
@@ -103,6 +110,10 @@
 				padding: 2rem;
 				background-color: rgba($black,.75);
 				transition: all 500ms cubic-bezier(.645, .045, .355, .2);
+				.grid_item-info--text {
+					width: 100%;
+					height: 100%;
+				}
 				// border: 3px solid $red;
 				h3 {
 					color: $white;
@@ -110,7 +121,7 @@
 					font-weight: 700;
 					font-size: 1.4rem;
 					margin-bottom: 0;
-					width: 80%;
+					width: 50%;
 				}
 				.grid_item-info--category {
 					display: flex;
