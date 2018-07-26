@@ -9,15 +9,17 @@
 ?>
 
 <div class="large-4 medium-4 small-12 column">
-	<div class="grid_item grid_item--contact">
-		<p>
-		Ti piace come lavoriamo?
-		</p>
-		<p>
-		Hai bisogno di alcune informazioni?
-		</p>
-		<a class="read__more read__more--black" href="/contatti/">
-			Contattaci
-		</a>
-	</div>
+	<a  href="/contatti/">
+		<div class="grid_item grid_item--contact">
+			<p>
+			Ti piace come lavoriamo?
+			</p>
+			<p>
+			Hai bisogno di alcune informazioni?
+			</p>
+			<span class="read__more read__more--black">
+				Contattaci
+			</span>
+		</div>
+	</a>
 </div>
