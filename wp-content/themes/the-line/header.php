@@ -10,6 +10,9 @@
  */
 
 $logo = get_field('logo', 'option');
+$facebook = get_field('facebook', 'option');
+$instagram = get_field('instagram', 'option');
+$linkedin = get_field('linkedin', 'option');
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -38,14 +41,14 @@ $logo = get_field('logo', 'option');
 				) );
 			?>
 			<div class="icon__social">
-				<a href="">
-					<i class="fa fa-facebook-official"></i>
+				<a href="https://www.facebook.com/<?php echo $facebook; ?>" target="_blank">
+					<i class="fa fa-facebook"></i>
 				</a>
-				<a href="">
+				<a href="https://www.instagram.com/<?php echo $instagram; ?>" target="_blank">
 					<i class="fa fa-instagram"></i>
 				</a>
-				<a href="">
-					<i class="fa fa-linkedin-square"></i>
+				<a href="https://www.linkedin.com/<?php echo $linkedin; ?>" target="_blank">
+					<i class="fa fa-linkedin"></i>
 				</a>
 			</div>
 		</nav><!-- #site-navigation -->
