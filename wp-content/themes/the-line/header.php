@@ -42,13 +42,13 @@ $linkedin = get_field('linkedin', 'option');
 			?>
 			<div class="icon__social">
 				<a href="https://www.facebook.com/<?php echo $facebook; ?>" target="_blank">
-					<i class="fa fa-facebook"></i>
+					<i class="fa fa-facebook-official"></i>
 				</a>
 				<a href="https://www.instagram.com/<?php echo $instagram; ?>" target="_blank">
 					<i class="fa fa-instagram"></i>
 				</a>
 				<a href="https://www.linkedin.com/<?php echo $linkedin; ?>" target="_blank">
-					<i class="fa fa-linkedin"></i>
+					<i class="fa fa-linkedin-square"></i>
 				</a>
 			</div>
 		</nav><!-- #site-navigation -->
