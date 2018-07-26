@@ -17,8 +17,14 @@ $image = get_sub_field('immagine_background');
 <div class="section__container section__container--background has--no-padding" style="background: url('<?php echo $image['url']?>') no-repeat center center;">
 	<div class="title__section title__section--categories">
 		<hr data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="300" data-aos-easing="ease-in-sine">
-		<h3><a href="/portfolio/.eventi"><?php echo __('Eventi'); ?></a></h3>
-		<h3><a href=""><?php echo __('Comunicazione'); ?></a></h3>
-		<h3><a href=""><?php echo __('Incentive'); ?></a></h3>
+		<?php if($events): ?>
+			<h3><a href="/portfolio"><?php echo __('Eventi'); ?></a></h3>
+		<?php endif;
+		if($communications): ?>
+			<h3><a href="/portfolio"><?php echo __('Comunicazione'); ?></a></h3>
+		<?php endif;
+		if($incentive): ?>
+			<h3><a href="/portfolio"><?php echo __('Incentive'); ?></a></h3>
+		<?php endif; ?>
 	</div>
 </div>

@@ -31,7 +31,7 @@ get_header();
 				<hr data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="300" data-aos-easing="ease-in-sine">
 				<h3 data-filter='all'><?php echo __('Tutti'); ?></h3>
 				<h3 data-filter='.eventi'><?php echo __('Eventi'); ?></h3>
-				<h3 data-filter='.comunicazione'><?php echo __('Comunicazione'); ?></h3>
+				<!-- <h3 data-filter='.comunicazione'><?php echo __('Comunicazione'); ?></h3> -->
 				<h3 data-filter='.incentive'><?php echo __('Incentive'); ?></h3>
 			</div>
 			
