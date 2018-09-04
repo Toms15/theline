@@ -13,6 +13,7 @@ $location = get_field('luogo');
 $people = get_field('partecipanti');
 $image = get_field('immagine_di_presentazione');
 $images = get_field('gallery');
+$type = get_field('tipologia');
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -22,12 +23,15 @@ $images = get_field('gallery');
 	
 	<div class="content__event">
 		<!-- Back to all events -->
-		<div class="back__to-events">
-			<a href="/portfolio/">
-				<i class="fa fa-angle-left"></i>
-				<?php echo __('Tutti gli eventi'); ?>
-			</a>
-		</div>
+		<?php if($type == 'incentive'): ?>
+		<?php else: ?>
+			<div class="back__to-events">
+				<a href="/portfolio/">
+					<i class="fa fa-angle-left"></i>
+					<?php echo __('Tutti gli eventi'); ?>
+				</a>
+			</div>
+		<?php endif; ?>
 		
 		<!-- Title event -->
 		<div class="title__event">

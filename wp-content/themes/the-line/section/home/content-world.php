@@ -87,7 +87,7 @@ $view = get_sub_field('eventi_incentive');
 
 						?>
 						<div class="map__incentive--single-item">
-							<a href="<?php echo $eventIncentive['permalink']; ?>">
+							<a target="_blank" href="<?php echo $eventIncentive['permalink']; ?>">
 								<?php echo $eventIncentive['title']; ?>
 								<i class="fa fa-angle-right"></i>
 							</a>
