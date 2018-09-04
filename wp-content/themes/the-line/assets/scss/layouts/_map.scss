@@ -79,6 +79,9 @@
 		justify-content: center;
 		flex-direction: column;
 		padding: 5rem 0;
+		&:after {
+			display: none;
+		}
 		img {
 			width: 100%;
 			max-width: 913px;
