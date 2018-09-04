@@ -12,6 +12,7 @@ $view = get_sub_field('eventi_incentive');
 
 <!-- Section World -->
 <div class="map__incentive">
+	<h1 class="highlight__title"><?php echo __('Incentive'); ?></h1>
 	<img id="map" src="<?php echo get_template_directory_uri() . '/images/map.png'?>" usemap="#map" border="0" width="913" height="446" alt="">
 	<map id="_map" name="map">
 		<area data-continent="oceania" class="cont cont-oceania" shape="poly" coords="782,387,803,394,815,381,819,367,811,347,796,330,793,319,793,316,787,324,778,329,775,321,766,321,753,327,743,333,731,342,722,344,720,365,726,382,740,380,751,375,766,375,715,357,857,408,866,397,868,385,877,392,857,421,865,411,">
