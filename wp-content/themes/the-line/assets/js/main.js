@@ -23,6 +23,30 @@ jQuery(document).ready(function(){
      });
    });
 
+  jQuery('.cont').on('mouseover', function(){
+    turnOnContinent($(this).data('continent'));
+  }).on('mouseout', function(){
+
+    
+
+    if ($('.map__incentive--info:hover').length == 0) {
+      turnOffContinent($(this));
+    }
+
+  })
+
+  function turnOffContinent(continent){
+    document.getElementById('map').src= 'wp-content/themes/the-line/images/map.png';
+    jQuery('.map__incentive--info').removeClass('show');
+    jQuery('.dropdown-' + $(this).data('continent')).removeClass('show');
+  }
+
+  function turnOnContinent(continent){
+    document.getElementById('map').src= 'wp-content/themes/the-line/images/map-' + continent + '.png';
+    jQuery('.map__incentive--info').removeClass('show');
+    jQuery('.dropdown-' + continent).addClass('show');
+  }
+
 	// ----------------------------------------
   // Add Class to Scroll Page
   // ----------------------------------------
