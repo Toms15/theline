@@ -111,6 +111,35 @@ jQuery(document).ready(function(){
   		clickable: true
   	},
   });
+  if(jQuery('.page__slider').length) {
+    var mySwiper = new Swiper('.page__slider', {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      speed: 400,
+      loop: true,
+      breakpoints: {
+        1024: {
+          spaceBetween: 20,
+        },
+        768: {
+          spaceBetween: 20,
+        },
+        640: {
+          spaceBetween: 10,
+        },
+        320: {
+          spaceBetween: 10,
+        }
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 5000,
+      },
+    });
+  }
 
   // ----------------------------------------
   // Google Maps

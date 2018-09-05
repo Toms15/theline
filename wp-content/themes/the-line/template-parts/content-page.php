@@ -39,6 +39,9 @@
 				elseif(get_row_layout() == 'video'):
 					get_template_part( 'section/page/content', 'video' );
 					wp_reset_postdata();
+				elseif(get_row_layout() == 'slider'):
+					get_template_part( 'section/page/content', 'slider' );
+					wp_reset_postdata();
 				endif;
 			endwhile;
 		else :
