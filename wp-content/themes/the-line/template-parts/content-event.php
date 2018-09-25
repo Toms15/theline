@@ -21,6 +21,8 @@ $type = get_field('tipologia');
 	<?php if($type !== 'comunicazione'): ?>
 		<!-- Featured Image -->
 		<div class="hero__page" style="background: url('<?php echo $image['url'];?>') no-repeat center center;"></div>
+	<?php else; ?>
+		<div style="height: 100px;"></div>
 	<?php endif; ?>
 	
 	<div class="content__event">
@@ -81,8 +83,10 @@ $type = get_field('tipologia');
 			</div>
 			<div class="large-6 medium-6 small-12 column">
 				<div class="info__text">
-					<h6><?php echo __('Servizi'); ?></h6>
-					<?php echo the_content(); ?>
+					<?php if ( !empty( get_the_content() ) ): ?>
+						<h6><?php echo __('Servizi'); ?></h6>
+						<?php echo the_content(); ?>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
