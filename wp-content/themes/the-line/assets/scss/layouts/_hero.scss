@@ -65,15 +65,15 @@
 				}
 			}
 		}
-		.swiper--shadow {
-			position: absolute;
-			z-index: 2;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			background-image: linear-gradient(to right, rgba($black,.8) 0%, rgba($black,0) 100%);
-		}
+		// .swiper--shadow {
+		// 	position: absolute;
+		// 	z-index: 2;
+		// 	top: 0;
+		// 	left: 0;
+		// 	bottom: 0;
+		// 	width: 100%;
+		// 	background-image: linear-gradient(to right, rgba($black,.8) 0%, rgba($black,0) 100%);
+		// }
 	}
 }
 .hero__page {
