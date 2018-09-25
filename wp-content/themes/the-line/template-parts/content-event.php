@@ -18,7 +18,7 @@ $type = get_field('tipologia');
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-	<?php if($type !== 'comunicazione'): ?>
+	<?php if($image): ?>
 		<!-- Featured Image -->
 		<div class="hero__page" style="background: url('<?php echo $image['url'];?>') no-repeat center center;"></div>
 	<?php else: ?>
