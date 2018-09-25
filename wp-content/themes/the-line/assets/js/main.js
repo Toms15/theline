@@ -113,6 +113,7 @@ jQuery(document).ready(function(){
     	},
       autoplay: {
         delay: 3500,
+        disableOnInteraction: false,
       },
     });
   }
