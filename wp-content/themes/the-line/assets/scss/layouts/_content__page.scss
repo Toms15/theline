@@ -1,6 +1,9 @@
 .content__page {
 	padding: 2rem 0;
 	position: relative;
+	&.content__page--white {
+		background-color: $white;
+	}
 	.highlight__title {
 		font-family: 'Roboto', Helvetica, sans-serif;
 		color: $red;

@@ -101,16 +101,21 @@ jQuery(document).ready(function(){
   // ----------------------------------------
   // Init Swiper
   // ----------------------------------------
-  var mySwiper = new Swiper('.swiper--hero', {
-  	speed: 400,
-  	spaceBetween: 100,
-    loop: true,
-  	pagination: {
-  		el: '.swiper-pagination',
-  		type: 'bullets',
-  		clickable: true
-  	},
-  });
+  if(jQuery('.swiper--hero').length) {
+    var mySwiper = new Swiper('.swiper--hero', {
+    	speed: 400,
+    	spaceBetween: 0,
+      loop: true,
+    	pagination: {
+    		el: '.swiper-pagination',
+    		type: 'bullets',
+    		clickable: true
+    	},
+      autoplay: {
+        delay: 3500,
+      },
+    });
+  }
   if(jQuery('.page__slider').length) {
     var mySwiper = new Swiper('.page__slider', {
       slidesPerView: 'auto',
