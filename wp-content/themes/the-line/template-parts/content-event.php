@@ -18,8 +18,10 @@ $type = get_field('tipologia');
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-	<!-- Featured Image -->
-	<div class="hero__page" style="background: url('<?php echo $image['url'];?>') no-repeat center center;"></div>
+	<?php if($type !== 'comunicazione'): ?>
+		<!-- Featured Image -->
+		<div class="hero__page" style="background: url('<?php echo $image['url'];?>') no-repeat center center;"></div>
+	<?php endif; ?>
 	
 	<div class="content__event">
 		<!-- Back to all events -->
