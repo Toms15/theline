@@ -83,10 +83,7 @@ $type = get_field('tipologia');
 			</div>
 			<div class="large-6 medium-6 small-12 column">
 				<div class="info__text">
-					<?php
-					$thecontent = get_the_content();
-					if(!empty($thecontent)):
-					?>
+					<?php if($type !== 'comunicazione'): ?>
 						<h6><?php echo __('Servizi'); ?></h6>
 						<?php echo the_content(); ?>
 					<?php endif; ?>
