@@ -83,7 +83,10 @@ $type = get_field('tipologia');
 			</div>
 			<div class="large-6 medium-6 small-12 column">
 				<div class="info__text">
-					<?php if ( !empty( get_the_content() ) ): ?>
+					<?php
+					$thecontent = get_the_content();
+					if(!empty($thecontent)):
+					?>
 						<h6><?php echo __('Servizi'); ?></h6>
 						<?php echo the_content(); ?>
 					<?php endif; ?>
