@@ -42,7 +42,7 @@ get_header();
 						$custom_args = array(
 							'post_type' 		 => 'evento',
 							'posts_per_page' => -1,
-							'meta_query'		 => 'data_evento',
+							'meta_key'		 => 'data_evento',
 							'orderby'     	 => 'meta_value',
 							'order' 				 => 'DESC'
 						);
