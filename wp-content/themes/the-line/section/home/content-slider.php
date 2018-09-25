@@ -21,8 +21,10 @@
 				$link = get_sub_field('link'); ?>
 			<!-- Slides -->
 			<div class="swiper-slide" style="background: url('<?php echo $image['url']; ?>') no-repeat center center;">
-				<h6><?php echo $title; ?></h6>
-				<div class="swiper--shadow"></div>
+				<a href="<?php echo $link; ?>">
+					<h6><?php echo $title; ?></h6>
+					<div class="swiper--shadow"></div>
+				</a>
 			</div>
 			<?php endwhile; ?>
 		</div>
