@@ -98,6 +98,22 @@ jQuery(document).ready(function(){
   });
 
   // ----------------------------------------
+  // View Button for Map on Portfolio page
+  // ----------------------------------------
+  jQuery('.categories__events h3[data-filter=".incentive"]').on('click', function() {
+    jQuery('.simple__button').addClass('show');
+  });
+  jQuery('.categories__events h3[data-filter="all"]').on('click', function() {
+    jQuery('.simple__button').removeClass('show');
+  });
+  jQuery('.categories__events h3[data-filter=".eventi"]').on('click', function() {
+    jQuery('.simple__button').removeClass('show');
+  });
+  jQuery('.categories__events h3[data-filter=".comunicazione"]').on('click', function() {
+    jQuery('.simple__button').removeClass('show');
+  });
+
+  // ----------------------------------------
   // Init Swiper
   // ----------------------------------------
   if(jQuery('.swiper--hero').length) {

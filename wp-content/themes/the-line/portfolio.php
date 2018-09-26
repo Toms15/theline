@@ -34,9 +34,15 @@ get_header();
 				<h3 data-filter='.incentive'><?php echo __('Viaggi Incentive'); ?></h3>
 				<h3 data-filter='.comunicazione'><?php echo __('Comunicazione'); ?></h3>
 			</div>
-
-			<?php get_template_part( 'template-parts/content', 'world' ); ?>
 			
+			
+			<div class="reveal" id="view--map" data-reveal>
+				<?php get_template_part( 'template-parts/content', 'world' ); ?>
+				<button class="close-button" data-close aria-label="Close modal" type="button">X</button>
+			</div>
+			
+			<button class="simple__button" data-open="view--map">Guarda la mappa</button>
+
 			<div class="grid grid-events">
 				<div class="grid-x">
 					<div class="all_events">
