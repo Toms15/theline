@@ -5,7 +5,7 @@ jQuery(document).ready(function(){
   // Cookie Bar
   // ----------------------------------------
   jQuery.cookieBar({
-   message: "Cliccando su OK, l’utente accetta l’utilizzo dei cookie di terze parti. Per maggiori informazioni, anche in ordine alla disattivazione, è possibile consultare l'<a class='cookie-link-2' href='http://www.anaso.it/informativa-sui-cookie/'>informativa sui cookie</a> completa.",
+   message: "Cliccando su OK, l’utente accetta l’utilizzo dei cookie di terze parti. Per maggiori informazioni, anche in ordine alla disattivazione, è possibile consultare l'<a class='cookie-link-2' href='/cookie'>informativa sui cookie</a> completa.",
    acceptText: 'Ok',
    fixed: true,
    bottom: true
