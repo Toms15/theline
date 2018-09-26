@@ -35,13 +35,13 @@ jQuery(document).ready(function(){
   })
 
   function turnOffContinent(continent){
-    document.getElementById('map').src= 'wp-content/themes/the-line/images/map.png';
+    document.getElementById('map').src= '/wp-content/themes/the-line/images/map.png';
     jQuery('.map__incentive--info').removeClass('show');
     jQuery('.dropdown-' + $(this).data('continent')).removeClass('show');
   }
 
   function turnOnContinent(continent){
-    document.getElementById('map').src= 'wp-content/themes/the-line/images/map-' + continent + '.png';
+    document.getElementById('map').src= '/wp-content/themes/the-line/images/map-' + continent + '.png';
     jQuery('.map__incentive--info').removeClass('show');
     jQuery('.dropdown-' + continent).addClass('show');
   }
