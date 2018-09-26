@@ -12,8 +12,13 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<!-- Featured Image -->
-	<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+	<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+	if($thumb):
+	?>
 	<div class="hero__page" style="background: url('<?php echo $thumb['0'];?>') no-repeat center center;"></div>
+	<?php else: ?>
+		<div style="height: 100px;"></div>
+	<?php endif; ?>
 
 	<div class="content__page">
 		<h1 class="highlight__title"><?php echo the_title(); ?></h1>
