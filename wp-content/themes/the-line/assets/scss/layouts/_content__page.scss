@@ -21,6 +21,20 @@
 		line-height: 1.5em;
 		margin: 0 auto 2rem;
 		color: $white;
+		a {
+			color: $red;
+		}
+	}
+	ul {
+		width: 90%;
+		font-family: 'Roboto', Helvetica, sans-serif;
+		letter-spacing: 0.05em;
+		font-size: 1rem;
+		line-height: 1.5em;
+		margin: 0 auto 2rem;
+		li {
+			color: $white;
+		}
 	}
 	.quote__page {
 		position: relative;
@@ -135,6 +149,15 @@
 		p {
 			font-family: 'Roboto', Helvetica, sans-serif;
 			color: $white;
+			font-weight: 400;
+			font-size: .9rem;
+			line-height: 1.8em;
+			margin: 0 0 2rem;
+			padding: 0 5rem;
+			width: 65vw;
+		}
+		ul {
+			font-family: 'Roboto', Helvetica, sans-serif;
 			font-weight: 400;
 			font-size: .9rem;
 			line-height: 1.8em;
