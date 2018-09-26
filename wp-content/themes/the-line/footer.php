@@ -82,6 +82,18 @@ $linkedin = get_field('linkedin', 'option');
 		</div>
 </div><!-- #page -->
 
+<?php if($analytics): ?>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $analytics; ?>"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', '<?php echo $analytics; ?>', { 'anonymize_ip': true });
+	</script>
+<?php endif; ?>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3UaVdW8UpKAqULko4-UrPBYwQkC0VW8Y"></script>
 <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/vendor.js"></script>
 <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/main.js"></script>

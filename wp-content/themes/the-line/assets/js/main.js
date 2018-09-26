@@ -23,16 +23,15 @@ jQuery(document).ready(function(){
      });
    });
 
+  // ----------------------------------------
+  // Incentive Map
+  // ----------------------------------------
   jQuery('.cont').on('mouseover', function(){
     turnOnContinent($(this).data('continent'));
   }).on('mouseout', function(){
-
-    
-
-    if ($('.map__incentive--info:hover').length == 0) {
+    if (jQuery('.map__incentive--info:hover').length == 0) {
       turnOffContinent($(this));
     }
-
   })
 
   function turnOffContinent(continent){

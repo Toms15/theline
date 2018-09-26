@@ -34,6 +34,8 @@ get_header();
 				<h3 data-filter='.incentive'><?php echo __('Viaggi Incentive'); ?></h3>
 				<h3 data-filter='.comunicazione'><?php echo __('Comunicazione'); ?></h3>
 			</div>
+
+			<?php get_template_part( 'template-parts/content', 'world' ); ?>
 			
 			<div class="grid grid-events">
 				<div class="grid-x">
