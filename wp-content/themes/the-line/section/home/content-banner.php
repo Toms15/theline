@@ -10,6 +10,7 @@
 $text = get_sub_field('testo');
 $image_bg = get_sub_field('immagine_background');
 $image = get_sub_field('immagine');
+$button = get_sub_field('link_bottone');
 ?>
 
 <!-- Section Content -->
@@ -18,6 +19,9 @@ $image = get_sub_field('immagine');
 		<div class="large-6 medium-6 small-12 column">
 			<div class="text">
 				<?php echo $text; ?>
+				<?php if($button): ?>
+					<a class="simple__button" href="<?php echo $button; ?>" target="_blank">Scopri di più</a>
+				<?php endif; ?>
 			</div>
 		</div>
 		<div class="large-6 medium-6 small-12 column">
