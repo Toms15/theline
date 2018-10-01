@@ -48,6 +48,9 @@
 	&.show {
 		display: flex;
 	}
+	&.simple__button--view {
+		display: inline-flex;
+	}
 }
 .close-button {
 	font-family: 'Roboto', Helvetica, sans-serif;
@@ -73,6 +76,9 @@
 @media screen and (min-width: 64em) {
 	.simple__button {
 		margin: -2rem 5rem 3rem;
+		&.simple__button--view {
+			margin: 2rem 0;
+		}
 	}
 }
 /* Large only */
