@@ -50,6 +50,9 @@
 	}
 	&.simple__button--view {
 		display: inline-flex;
+		&:hover {
+			color: $white;
+		}
 	}
 }
 .close-button {
