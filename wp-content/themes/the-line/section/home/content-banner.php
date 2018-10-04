@@ -20,7 +20,7 @@ $button = get_sub_field('link_bottone');
 			<div class="text">
 				<?php echo $text; ?>
 				<?php if($button): ?>
-					<a class="simple__button simple__button--view" href="<?php echo $button; ?>" target="_blank">Scopri di più</a>
+					<a class="simple__button simple__button--view" href="<?php echo $button; ?>">Scopri di più</a>
 				<?php endif; ?>
 			</div>
 		</div>

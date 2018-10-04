@@ -81,7 +81,7 @@
 	.image__client {
 		width: 90%;
 		margin: 0 5% 3rem;
-		height: 300px;
+		height: 180px;
 		background-size: contain !important;
 		background-color: $white !important;
 	}
@@ -106,12 +106,10 @@
 	}
 	.categories__events {
 		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		flex-direction: column;
 		cursor: pointer;
+		padding: 0 1rem;
 		h3 {
+			display: inline-block;
 			font-family: 'Roboto', Helvetica, sans-serif;
 			color: $white;
 			font-size: 1.3rem;
@@ -119,7 +117,8 @@
 			letter-spacing: 0.1em;
 			text-align: center;
 			padding: 0 1rem;
-			margin-bottom: 1rem;
+			margin: 0 1rem 1rem 0;
+			border: 1px solid $red;
 		}
 		hr {
 			display: none;
@@ -206,7 +205,10 @@
 		.categories__events {
 			flex-direction: row;
 			margin-bottom: 4rem;
+			padding: 0;
 			h3 {
+				border: 0;
+				margin-right: 0;
 				font-size: 1.3rem;
 				padding: 0 2rem;
 				margin-bottom: 1rem;
